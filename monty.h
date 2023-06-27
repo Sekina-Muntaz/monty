@@ -48,7 +48,7 @@ int init_stack(stack_t **stack);
 int check_mode(stack_t *stack);
 void free_tokens(void);
 unsigned int token_arr_len(void);
-int run_monty(FILE *script_fd);
+int execute(FILE *script_fd);
 void set_op_tok_error(int error_code);
 
 /* OPCODE FUNCTIONS */
@@ -85,5 +85,6 @@ int pint_error(unsigned int line_number);
 int short_stack_error(unsigned int line_number, char *op);
 int div_error(unsigned int line_number);
 int pchar_error(unsigned int line_number, char *message);
+size_t getline(FILE *stream, char *buf, size_t size);
 
 #endif /* __MONTY_H__ */
