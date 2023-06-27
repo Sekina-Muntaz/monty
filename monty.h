@@ -85,6 +85,5 @@ int pint_error(unsigned int line_number);
 int short_stack_error(unsigned int line_number, char *op);
 int div_error(unsigned int line_number);
 int pchar_error(unsigned int line_number, char *message);
-size_t getline(FILE *stream, char *buf, size_t size);
 
 #endif /* __MONTY_H__ */
